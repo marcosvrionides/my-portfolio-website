@@ -1,0 +1,92 @@
+.name-profilePic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: position, 1s ease-in;
+}
+
+.defocus-name-profilePic {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: all, 1s ease-in;
+}
+
+.display-name {
+    font-family: 'Computer Modern';
+    font-size: 3em;
+    transition: all, 1s ease-in;
+}
+
+.defocus-display-name {
+    font-family: 'Computer Modern';
+    font-size: 1em;
+    transition: all, 1s ease-in;
+}
+
+.profile-picture {
+    width: 15em;
+    height: 15em;
+    border-radius: 10em;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.7);
+    transition: all, 1s ease-in;
+}
+
+.defocus-profile-picture {
+    width: 5em;
+    height: 5em;
+    border-radius: 10em;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.7);
+    transition: all, 1s ease-in;
+}
+
+@media (max-width: 768px) {
+    .name-profilePic {
+        all: unset;
+        position: fixed;
+        top: 50%;
+        transform: translate(0, -50%);
+        display: flex;
+        align-items: center;
+        margin: 1em;
+        transition: all, 1s ease-in;
+    }
+
+    .defocus-name-profilePic {
+        all: unset;
+        gap: 1em;
+        position: fixed;
+        top: 1em;
+        display: flex;
+        align-items: center;
+        margin: 1em;
+        transition: all, 1s ease-in;
+    }
+
+    .display-name {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .defocus-display-name {
+        font-size: 1em;
+    }
+    
+    .profile-picture {
+        width: 10em;
+        height: 10em;
+        border-radius: 10em;
+    }
+
+    .defocus-profile-picture {
+        width: 5em;
+        height: 5em;
+    }
+}
