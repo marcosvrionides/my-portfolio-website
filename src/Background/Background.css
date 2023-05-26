@@ -1,0 +1,24 @@
+.background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shape-step0 {
+    width: 50vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in-out;
+}
+
+.shape-step1 {
+    width: 50vw;
+    height: 95vh;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in-out;
+}

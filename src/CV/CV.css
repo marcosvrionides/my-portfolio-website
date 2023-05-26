@@ -1,0 +1,23 @@
+@import url('../ColourPalette.css');
+
+.defocus-CV {
+    height: 0vh;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    border: 2px solid black;
+    transition: all, 1s ease-in;
+}
+
+.CV {
+    height: 90vh;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    border: 2px solid black;
+    transition: all, 1s ease-in;
+}
