@@ -1,0 +1,51 @@
+@import url('../ColourPalette.css');
+
+.focus-fyp {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    transition: all, 1s ease-in;
+    overflow-x: auto;
+}
+
+.defocus-fyp {
+    height: 0vh;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all, 1s ease-in;
+    overflow-x: auto;
+}
+
+.screenshot-display {
+    display: flex;
+    position: absolute;
+    bottom: 2em;
+    padding-inline: 1em;
+}
+
+.screenshot {
+    height: 50vh;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.screenshot-caption {
+    color: var(--font-color);
+    text-align: center;
+}
+
+.website-link {
+    font-size: 3em;
+    font-weight: 1000;
+}
+
+.website-info {
+    padding-inline: 1em;
+    color: var(--font-color);
+}

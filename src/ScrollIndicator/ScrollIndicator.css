@@ -1,0 +1,27 @@
+@import url('../ColourPalette.css');
+
+.scroll-indicator-container {
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    right: 1em;
+    transform: translate(0, -50%);
+    width: 11vw;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.scroll-item-focus {
+    font-size: larger;
+    font-weight: 500;
+    color: var(--accent-color);
+    transition: all 0.25s ease-in-out;
+}
+
+.scroll-item-defocus {
+    font-size: small;
+    color: var(--secondary-accent-color);
+    transition: all 0.25s ease-in-out;
+}

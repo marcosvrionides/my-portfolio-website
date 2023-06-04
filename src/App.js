@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import './App.css'
-import Profile from './Profile/Profile'
-import CV from './CV/CV'
-import Background from './Background/Background'
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import Profile from './Profile/Profile';
+import CV from './CV/CV';
+import Background from './Background/Background';
+import FinalYearProject from './FinalYearProject/FinalYearProject';
+import ScrollIndicator from './ScrollIndicator/ScrollIndicator';
 
 function App() {
 
@@ -22,10 +24,11 @@ function App() {
 
     return (
         <div className='master-container'>
-            <div style={{position: 'fixed', top: '1em', right: '1em'}}>{"Scroll position: " + scrollPosition}</div>
-            <Background scrollPosition={scrollPosition}/>
-            <Profile scrollPosition={scrollPosition}/>
-            <CV scrollPosition={scrollPosition}/>
+            <ScrollIndicator scrollPosition={scrollPosition} />
+            <Background scrollPosition={scrollPosition} />
+            <Profile scrollPosition={scrollPosition} />
+            <CV scrollPosition={scrollPosition} />
+            <FinalYearProject scrollPosition={scrollPosition} />
         </div>
     )
 }

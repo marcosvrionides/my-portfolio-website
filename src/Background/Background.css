@@ -22,3 +22,12 @@
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
     transition: all 1s ease-in-out;
 }
+
+.shape-step2 {
+    width: 70vw;
+    height: 95vh;
+    border-radius: 1%;
+    background-color: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in-out;
+}
